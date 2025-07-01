@@ -228,11 +228,11 @@ class DailyDevOpsAgent:
                 server.login(self.email_user, self.email_password)
                 server.send_message(msg)
 
-            logger.info(f"✅ Daily email sent successfully to {self.recipient_email}")
+            logger.info(f" Daily email sent successfully to {self.recipient_email}")
             return True
 
         except Exception as e:
-            logger.error(f"❌ Error sending email: {e}")
+            logger.error(f" Error sending email: {e}")
             return False
 
     def test_connection(self):
@@ -243,10 +243,10 @@ class DailyDevOpsAgent:
             with smtplib.SMTP(self.smtp_server, self.smtp_port) as server:
                 server.starttls(context=context)
                 server.login(self.email_user, self.email_password)
-            logger.info("✅ SMTP connection test successful")
+            logger.info(" SMTP connection test successful")
             return True
         except Exception as e:
-            logger.error(f"❌ SMTP connection test failed: {e}")
+            logger.error(f"SMTP connection test failed: {e}")
             return False
 
 def main():
