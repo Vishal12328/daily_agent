@@ -2,7 +2,7 @@ Daily DevOps Email Agent
 
 This is a Email Bot that will collect news information from different RSS feed daily with particular keywords and pool them into neat and proper formatted text along with 10 questions from the devops world which will solidify the fundamentals and then end with a quotation from book of my choice.
 
-Setup Instructions
+# Setup Instructions
 ## Prerequisites
 1. GitHub account
 2. Gmail account with 2FA enabled
