@@ -4,6 +4,7 @@ import os
 import requests
 import feedparser
 import random
+from dotenv import load_dotenv
 from datetime import datetime
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -12,7 +13,7 @@ import logging
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
-
+load_dotenv()
 class DailyDevOpsAgent:
     def __init__(self):
         # Validate environment variables
