@@ -121,7 +121,7 @@ class DailyDevOpsAgent:
                 logger.error(f"Error fetching {feed_url}: {e}")
 
         logger.info(f"Total news items collected: {len(news_items)}")
-        return news_items[:5]  # Return top 5 items
+        return news_items[:5]  
 
     def generate_technical_questions(self):
         """Generate 10 random technical questions"""
@@ -147,8 +147,6 @@ class DailyDevOpsAgent:
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
             <div style="max-width: 800px; margin: 0 auto; padding: 20px;">
                 <h1 style="color: #2c3e50; border-bottom: 2px solid #3498db;">Daily DevOps & MLOps Update</h1>
-                <p style="color: #7f8c8d; font-style: italic;">Generated on {datetime.now().strftime('%Y-%m-%d at %H:%M UTC')}</p>
-
                 <h2 style="color: #27ae60; margin-top: 30px;">📰 Part 1: Latest DevOps & MLOps Advancements</h2>
         """
 
