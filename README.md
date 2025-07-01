@@ -1,6 +1,22 @@
 Daily DevOps Email Agent 
 
-This is a Email Bot that will collect news information from different RSS feed daily with particular keywords and pool them into neat and proper formatted text along with 10 questions from the devops world which will solidify the fundamentals and then end with a quotation from book of my choice. finally, everything will be formatted neatly and will be sent to our particular email(that we have mentioned in the variables) at the time that we have mentioned in the cron job in the actions(yaml config file)
+This is an Email Bot that performs the following tasks every day:
+
+## Aggregates News from RSS Feeds
+The bot collects news articles from multiple RSS feeds based on predefined keywords, ensuring only relevant and up-to-date information is fetched.
+
+## Curates DevOps Questions
+It selects and includes 10 carefully chosen DevOps-related questions daily. These are designed to help reinforce and solidify your understanding of core DevOps principles.
+
+## Daily Inspirational Quote
+Each email ends with an inspirational quote from a book of your choice, adding a thoughtful and reflective touch to your daily learning routine.
+
+## Neat and Structured Formatting
+All content—news items, questions, and the quote—is neatly formatted for clarity and readability in the email.
+
+## Scheduled Delivery via Cron Job
+The bot sends the compiled digest to a configured email address at a specific time each day, based on the cron schedule defined in the GitHub Actions workflow (YAML config file).
+
 
 # Setup Instructions
 
