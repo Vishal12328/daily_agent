@@ -1,5 +1,8 @@
-Daily DevOps Email Agent Setup Instructions
+Daily DevOps Email Agent 
 
+This is a Email Bot that will collect news information from different RSS feed daily with particular keywords and pool them into neat and proper formatted text along with 10 questions from the devops world which will solidify the fundamentals and then end with a quotation from book of my choice.
+
+Setup Instructions
 ## Prerequisites
 1. GitHub account
 2. Gmail account with 2FA enabled
@@ -45,9 +48,9 @@ Add these secrets:
 - Customize email template
 
 ## Troubleshooting
-- If emails don't send, check GitHub Actions logs
+- If emails weren't recieved, check GitHub Actions logs
 - Ensure Gmail app password is correct
-- Verify all secrets are set properly
+- Verify all secrets are set properly(IMPORTANT)
 - Check spam folder for emails
 
 ## Cost: Completely Free!

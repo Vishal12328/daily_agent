@@ -208,7 +208,7 @@ class DailyDevOpsAgent:
             
             # Create message
             msg = MIMEMultipart('alternative')
-            msg['Subject'] = f"Daily DevOps Update - {datetime.now().strftime('%Y-%m-%d')}"
+            msg['Subject'] = f"Daily DevOps Update - {datetime.now().strftime('%d-%m-%Y')}"
             msg['From'] = self.email_user
             msg['To'] = self.recipient_email
 
