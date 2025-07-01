@@ -57,3 +57,5 @@ Add these secrets:
 - GitHub Actions: 2000 free minutes/month
 - Gmail SMTP: Free
 
+## Email That is recieved:
+![Image](result.png)
