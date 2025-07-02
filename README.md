@@ -19,8 +19,37 @@ The bot sends the compiled digest to a configured email address at a specific ti
 
 
 # Setup Instructions
+## Using Docker
+If you have your own server, then this process of cloning the repository and then setting up the secrets is can be simplified. we can use the docker repository of the same applciation while passing the env variables to it.
 
-## Prerequisites
+- Use this command to pull up the docker image.
+```bash
+docker pull vishaldodda/devops-agent
+```
+- Run this command to setup a cron job.
+```vim
+0 7 * * * /path/to/script1.sh
+
+5 7 * * * /path/to/script2.sh
+```
+- the first script:`scrip1.sh` should have the command to run the docker image with the variables passed. Ex:
+```bash
+#!/bin/bash
+docker run  \
+-e EMAIL_PASSWORD=yourpassword \
+-e EMAIL_USER=yourmailid \
+-e RECIPIENT_EMAIL=target mailid \
+--name bot \
+-d \
+devops-agent
+```
+- The second script:`script2.sh` should have the command to delete the docker container that we have created, so that it wouldn't conflict the next day's run
+```bash
+docker rm bot
+```
+## Using Github actions
+
+### Prerequisites
 1. GitHub account
 2. Gmail account with 2FA enabled
 3. Basic understanding of Python and GitHub Actions
